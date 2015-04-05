@@ -29,9 +29,11 @@ BoardStore = assign {}, EventEmitter.prototype,
 
     switch action.type
       when ActionTypes.CHANGE_VALUE
-        _board = _board.setIn([x, y], value)
-        console.log _board.toString()
-        BoardStore.emitChange()
+        parsedValue = parseInt(value, 10)
+        if 0 < parsedValue && parsedValue <= 9
+          _board = _board.setIn([x, y], value)
+          console.log _board.toString()
+          BoardStore.emitChange()
 
     true
 

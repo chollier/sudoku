@@ -6,7 +6,7 @@ class Box extends React.Component
 
   constructor: (props) ->
     super props
-    @state = value: null
+    @state = value: ""
 
   @propTypes =
     x: React.PropTypes.number.isRequired
@@ -22,6 +22,7 @@ class Box extends React.Component
     @setState value: BoardStore.getValue(@props.x, @props.y)
 
   onChange: (event) =>
+    event.preventDefault()
     BoardActions.setValue
       x: @props.x
       y: @props.y
