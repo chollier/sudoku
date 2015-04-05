@@ -14,6 +14,7 @@ class Box extends React.Component
 
   componentDidMount: ->
     BoardStore.addChangeListener(this.getStateFromStores)
+    @getStateFromStores()
 
   componentWillUnmount: ->
     BoardStore.removeChangeListener(this.getStateFromStores)

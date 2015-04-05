@@ -4,6 +4,9 @@ Immutable = require('immutable')
 assign = require('object-assign')
 ActionTypes = require('../constants/ActionTypes.coffee')
 
+# That obviously fucks all the performance tuning
+sudoku = require('sudoku')
+
 CHANGE_EVENT = 'change'
 
 _board = Immutable.Map()

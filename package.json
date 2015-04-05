@@ -25,6 +25,7 @@
     "pushstate-server": "^1.5.0",
     "react": "^0.13.1",
     "react-hot-loader": "^1.2.4",
+    "sudoku": "0.0.2",
     "webpack": "^1.7.3",
     "webpack-dev-server": "^1.8.0"
   }
