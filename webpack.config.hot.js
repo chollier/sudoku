@@ -19,6 +19,7 @@ module.exports = {
 
   module: {
     loaders: [
+      { test: require.resolve("react"), loader: "expose?React" },
       { test: /\.cjsx$/, loaders: ['coffee', 'cjsx'], exclude: /node_modules/ },
       { test: /\.coffee$/, loader: 'coffee-loader', exclude: /node_modules/ },
     ]
