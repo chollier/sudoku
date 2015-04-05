@@ -21,6 +21,7 @@
     "flux": "^2.0.1",
     "immutable": "^3.7.1",
     "jsx-loader": "^0.13.1",
+    "object-assign": "^2.0.0",
     "pushstate-server": "^1.5.0",
     "react": "^0.13.1",
     "react-hot-loader": "^1.2.4",
