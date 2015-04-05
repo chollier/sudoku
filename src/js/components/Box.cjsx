@@ -12,6 +12,9 @@ class Box extends React.Component
     x: React.PropTypes.number.isRequired
     y: React.PropTypes.number.isRequired
 
+  shouldComponentUpdate: (nextProps, nextState) ->
+    nextState.value != @state.value
+
   componentDidMount: ->
     BoardStore.addChangeListener(this.getStateFromStores)
     @getStateFromStores()
