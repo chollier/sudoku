@@ -1,7 +1,7 @@
 var webpack = require("webpack");
 
 module.exports = {
-  entry: ["webpack-dev-server/client?http://localhost:8080", 'webpack/hot/dev-server','./src/js/app.jsx.coffee'],
+  entry: ["webpack-dev-server/client?http://localhost:8080", 'webpack/hot/dev-server','./src/js/app.cjsx'],
 
   output: {
     path: __dirname + "/src/js/",
@@ -14,11 +14,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.cjsx', '.coffee']
-  },
-
-  resolveLoader: {
-    modulesDirectories: ['node_modules']
+    extensions: ['', '.js', '.cjsx', '.coffee']
   },
 
   module: {
@@ -34,7 +30,6 @@ module.exports = {
 
   devServer: {
     stats: {colors: true},
-    contentBase: 'http://localhost:8090/',
     hot: true
   },
 
