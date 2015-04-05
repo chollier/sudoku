@@ -1,0 +1,28 @@
+{
+  "name": "Sudoku",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://github.com/chollier/sudoku",
+  "contributors": [
+    {
+      "name": "Loïc Chollier",
+      "email": "loic@chollier.com"
+    }
+  ],
+  "engine": "node 0.12.x",
+  "scripts": {
+    "webpack-dev-server": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.1",
+    "flux": "^2.0.1",
+    "immutable": "^3.7.1",
+    "jsx-loader": "^0.13.1",
+    "pushstate-server": "^1.5.0",
+    "react": "^0.13.1",
+    "react-hot-loader": "^1.2.4",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.8.0"
+  }
+}
